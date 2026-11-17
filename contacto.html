@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactá a la Cooperadora de la Escuela N° 123.">
+    <title>Contacto | Cooperadora</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">🎓 Cooperadora</a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="actividades.html">Actividades</a>
+            <a href="como-ayudar.html">Cómo ayudar</a>
+            <a href="contacto.html" class="btn activo">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-interno">
+            <h1>Contactanos</h1>
+            <p>Escribinos si querés sumarte, donar o preguntar algo. Te respondemos en 24hs.</p>
+        </section>
+
+        <section class="contenedor">
+            <div class="layout">
+                <div class="info">
+                    <h3>📍 Datos</h3>
+                    <p><strong>Escuela:</strong> Escuela Tecnica N° 669</p>
+                    <p><strong>Dirección:</strong> independencia 3082, Villa Constitución</p>
+                    <p><strong>Email:</strong> balanceescuela@gmail.com</p>
+                    <p><strong>Horario:</strong> Lun a Vie de 8am a 19pm</p>
+                    <hr>
+                    <p>💬 También podés encontrarnos en la entrada de la escuela a la hora de salida.</p>
+                </div>
+
+                <form>
+                    <label for="nombre">Nombre completo</label>
+                    <input id="nombre" type="text" placeholder="Ej: Juan Pérez" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="tu@email.com" required>
+
+                    <label for="motivo">¿Por qué escribís?</label>
+                    <select id="motivo">
+                        <option>Quiero ser socio</option>
+                        <option>Quiero donar</option>
+                        <option>Quiero ser voluntario</option>
+                        <option>Otra consulta</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" placeholder="Escribí tu mensaje..."></textarea>
+
+                    <button type="submit">Enviar mensaje</button>
+                    <p class="nota-form">Este formulario es de ejemplo, para tu proyecto de clase.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Cooperadora Escuela Tecnica N° 669</strong></p>
+        <p> Villa Constitución • balanceescuela@gmail.com</p>
+        <p class="copy">© 2026 - Hecha por estudiantes</p>
+    </footer>
+
+</body>
+
+</html>

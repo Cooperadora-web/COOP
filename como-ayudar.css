@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+nav a.activo {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav a:hover { opacity: 0.8; }
+
+.btn {
+    background-color: #ff9f1c;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #1e3a5f !important;
+    font-weight: bold;
+}
+
+.hero-interno {
+    background: linear-gradient(135deg, #1e3a5f, #2a5a8a);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-interno h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-interno p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 17px;
+    opacity: 0.95;
+}
+
+.contenedor {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.opciones {
+    display: flex;
+    gap: 20px;
+}
+
+.opcion {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 28px 22px;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    transition: 0.2s;
+}
+
+.opcion:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.opcion.destacado {
+    border: 2px solid #ff9f1c;
+    transform: scale(1.03);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff9f1c;
+    color: #1e3a5f;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.icono { font-size: 36px; }
+
+.opcion h3 {
+    color: #1e3a5f;
+    margin: 8px 0;
+}
+
+.precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3a5f;
+    margin: 10px 0;
+}
+
+.precio span {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+}
+
+.opcion a {
+    display: inline-block;
+    margin-top: 16px;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.opcion a:hover { background-color: #2a5a8a; }
+
+.aviso {
+    background-color: #fff3d6;
+    border: 1px solid #ff9f1c;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.copy { opacity: 0.7; }
+
+@media (max-width: 700px) {
+    header { flex-direction: column; gap: 12px; padding: 16px 20px; }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+    nav a { margin-left: 0; }
+    .opciones { flex-direction: column; }
+    .opcion.destacado { transform: none; }
+}
